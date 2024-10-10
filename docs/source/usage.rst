@@ -1,6 +1,8 @@
 Usage
 =====
 
+Demo:
+
 .. _installation:
 
 Installation

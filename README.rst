@@ -1,9 +1,12 @@
-Template for the Read the Docs tutorial
-=======================================
+Read The Docs documentation for Henry
+======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+This repository is generated into the Read The Docs documentation at .
 
-Read the tutorial here:
+Contributing
+============
 
-https://docs.readthedocs.io/en/stable/tutorial/
+Add any new documentation pages to `docs/sources/` in ReST format (`.rst`).
+Readthedocs handles the rest, rebuilding the page when changes are pushed here.
+
+Note that the documentation is public! Do not store sensitive information here.
