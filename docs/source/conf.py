@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'Henry'
-copyright = '2024, Eelis Peltola'
+copyright = '2024, Autonomy and Mobility Lab'
 author = 'Eelis Peltola'
 
 release = '0.1'

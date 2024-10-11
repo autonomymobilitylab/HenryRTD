@@ -1,0 +1,9 @@
+Cameras
+=======
+
+
+.. _installation:
+
+Installation
+------------
+
