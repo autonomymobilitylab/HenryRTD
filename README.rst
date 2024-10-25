@@ -6,7 +6,7 @@ This repository is generated into Read The Docs documentation at https://henrydo
 Contributing
 ------------
 
-Add any new documentation pages to ``docs/sources/`` in ReST format (``.rst``),
+Add any new documentation pages to ``docs/sources/`` in `ReST format (.rst)<https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`,
 and add the name of page to the table of contents at ``docs/sources/index.rst``.
 Readthedocs handles the rest, rebuilding the page when changes are pushed here.
 
