@@ -33,3 +33,14 @@ html_theme = 'sphinx_rtd_theme'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+# -- Role for code output highlighting, use with :bash:`my bash command`
+rst_prolog = """
+.. role:: bash(code)
+    :language: bash
+    :class: highlight
+
+.. role:: python(code)
+    :language: python
+    :class: highlight
+"""
