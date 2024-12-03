@@ -21,6 +21,13 @@ Contents
   lidar
   platform_usage
 
+See :doc:`platform_usage` for how to start everything up and make modifications to the launch configurations.
+
+The individual pages for each sensor have more detailed information on what certain parameters do and how the sensors are set up.
+
+The system page has diagrams of the connections and power setup.
+
+
 Vehicle
 --------
 
