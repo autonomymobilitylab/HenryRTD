@@ -3,6 +3,10 @@ Cameras
 
 A **Blackfly S** camera is installed inside behind the dashboard.
 
+* Resolution: 2048 x 1536 (3.2 MP)
+* Max frame rate: 55 fps
+* USB3
+
 .. _usage:
 
 Usage

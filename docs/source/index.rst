@@ -31,14 +31,17 @@ Sensor setup
 
 For a detailed diagram of the setup with connections, see :doc:`system diagram <system>`.
 
-* :doc:`camera <cameras>`
+* :doc:`Camera <cameras>`
+
+  * Blackfly S BFS-U3-31S4C-C
+  * Resolution: 2048 x 1536
 
 * Can-bus connections to 4 different can networks 
 
   * Possibility to be connected into 2 different can busses simultaneously 
   * Peak can-to-ethernet interface 
 
-* :doc:`lidar <lidar>` 
+* :doc:`Lidar <lidar>` 
 
   * Velodyne Ultra Puck 80-VLP-32C-B 
   * Channels: 32 
