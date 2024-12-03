@@ -16,7 +16,8 @@ Contents
 
 .. toctree::
 
-   cameras
+  cameras
+  system
 
 Vehicle
 --------
@@ -27,5 +28,37 @@ Vehicle
 Sensor setup
 ------------
 
-- lidar
-- :doc:`camera <cameras>`
+For a detailed diagram of the setup with connections, see :doc:`system diagram <system>`.
+
+* :doc:`camera <cameras>`
+
+* Can-bus connections to 4 different can networks 
+
+  * Possibility to be connected into 2 different can busses simultaneously 
+  * Peak can-to-ethernet interface 
+
+* Lidar 
+
+  * Velodyne Ultra Puck 80-VLP-32C-B 
+  * Channels: 32 
+  * Range: 200m 
+  * Field of View
+  
+    * horizontal:360°, vertical:40° (-25° to +15 °) 
+
+  * 3D LiDAR Data Points Generated: 
+    
+    * Single Return Mode:    ~600,000 points per second  
+    * Dual Return Mode:     ~1,200,000 points per second 
+
+* GPS & IMU 
+
+  * PwrPak7D E2, with dual antenna installation (Tallysman VSP6337L) 
+  * DGPS corrected (RTK capable device) 
+  * Integrated inertial measure unit
+
+Software
+--------
+
+* Ubuntu 22.04
+* ROS2 Humble
