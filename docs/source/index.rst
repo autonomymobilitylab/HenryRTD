@@ -19,6 +19,7 @@ Contents
   system
   cameras
   lidar
+  platform_usage
 
 Vehicle
 --------
@@ -66,3 +67,8 @@ Software
 
 * Ubuntu 22.04
 * ROS2 Humble
+
+Coordinate frames
+-----------------
+
+TODO: Coordinate frames (TF)
