@@ -16,8 +16,9 @@ Contents
 
 .. toctree::
 
-  cameras
   system
+  cameras
+  lidar
 
 Vehicle
 --------
@@ -37,7 +38,7 @@ For a detailed diagram of the setup with connections, see :doc:`system diagram <
   * Possibility to be connected into 2 different can busses simultaneously 
   * Peak can-to-ethernet interface 
 
-* Lidar 
+* :doc:`lidar <lidar>` 
 
   * Velodyne Ultra Puck 80-VLP-32C-B 
   * Channels: 32 
