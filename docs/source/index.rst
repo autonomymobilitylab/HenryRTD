@@ -48,7 +48,7 @@ For a detailed diagram of the setup with connections, see :doc:`system diagram <
   * Range: 200m 
   * Field of View
   
-    * horizontal:360°, vertical:40° (-25° to +15 °) 
+    * horizontal: 360°, vertical: 40° (-25° to +15 °) 
 
   * 3D LiDAR Data Points Generated: 
     
