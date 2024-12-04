@@ -18,8 +18,11 @@ The required ROS2 drivers were installed from https://github.com/novatel/novatel
  ``ros2 launch novatel_oem7_driver oem7_net.launch.py oem7_ip_addr:=192.168.1.20 oem7_port:=3001 oem7_if:=Oem7ReceiverTcp``
 
 NOTE: Parameters for the above launch file include:
+
 * **192.168.1.20**: IP address of the GPS receiver (i.e. device location on local network)
+
 * **3001**: Port number used for communication (listening for commands and sending data) with the GPS receiver (this is usually a value between 3001 and 3007 but the default port of 3001 should work)
+
 * **Oem7ReceiverTcp**: Specifies that the interface type used to communicate with the GPS receiver is a TCP connection
 
 .. _usage:
