@@ -19,7 +19,15 @@ Contents
   system
   cameras
   lidar
+  gnss
   platform_usage
+
+See :doc:`platform_usage` for how to start everything up and make modifications to the launch configurations.
+
+The individual pages for each sensor have more detailed information on what certain parameters do and how the sensors are set up.
+
+The system page has diagrams of the connections and power setup.
+
 
 Vehicle
 --------
@@ -42,7 +50,7 @@ For a detailed diagram of the setup with connections, see :doc:`system diagram <
   * Possibility to be connected into 2 different can busses simultaneously 
   * Peak can-to-ethernet interface 
 
-* :doc:`Lidar <lidar>` 
+* :doc:`Lidar <lidar>`
 
   * Velodyne Ultra Puck 80-VLP-32C-B 
   * Channels: 32 
@@ -56,7 +64,7 @@ For a detailed diagram of the setup with connections, see :doc:`system diagram <
     * Single Return Mode:    ~600,000 points per second  
     * Dual Return Mode:     ~1,200,000 points per second 
 
-* GPS & IMU 
+* :doc:`GNSS and IMU<gnss>`
 
   * PwrPak7D E2, with dual antenna installation (Tallysman VSP6337L) 
   * DGPS corrected (RTK capable device) 
