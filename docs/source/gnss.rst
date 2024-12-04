@@ -44,7 +44,7 @@ After launching the package (refer to step 3 under *Installation*), the followin
 Topic information
 -----------------
 
-The **gps_msgs** package, which includes the **GPSFix** and **GPSStatus** message types, is yet to have a dedicated ROS 2 documentation page for this topic. The most detailed available documentation is mainly from ROS 1, which is partially applicable (albeit some differences to the message structure).
+The **gps_msgs** package, which includes the **GPSFix** and **GPSStatus** message types, is yet to have a dedicated ROS 2 documentation page for this topic. The most detailed available documentation is mainly from ROS 1 (from which the package was ported), which is partially applicable (albeit some differences to the message structure).
 Thus, for detailed information on this topic, you can refer to the following resources:
 
 1. Github repository (**humble** branch): https://github.com/novatel/novatel_oem7_driver/tree/humble
