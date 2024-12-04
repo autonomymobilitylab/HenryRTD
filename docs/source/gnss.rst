@@ -1,7 +1,7 @@
 GPS
 =======
 
-A **Novatel PwrPak7D** GPS unit (with **Tallysman VSP6337L** dual antennas)  is installed. While the GPS unit is in the trunk of the vehicle, the two antennas are located on the two rear corners of the vehicle hood.
+A **Novatel PwrPak7D** GPS unit (with **Tallysman VSP6337L** dual antennas)  is installed. While the GPS unit is in the trunk of the vehicle, the two antennas are located on the two rear corners of the vehicle roof.
 
 .. _installation:
 
@@ -34,4 +34,15 @@ After launching the package (refer to step 3 under *Installation*), the followin
  ``ros2 interface show gps_msgs/msg/GPSFix``
 2. Information on the status and health information of the GPS receiver and its satellite signal:
  ``ros2 interface show gps_msgs/msg/GPSStatus``
+
+.. _topic information:
+
+Topic information
+-----------------
+
+The **gps_msgs** package, which includes the **GPSFix** and **GPSStatus** message types, is yet to have a dedicated ROS 2 documentation page for this topic. The most detailed available documentation is mainly from ROS 1, which is partially applicable (albeit some differences to the message structure).
+Thus, for detailed information on this topic, you can refer to the following resources:
+1. Github repository (**humble** branch): https://github.com/novatel/novatel_oem7_driver/tree/humble
+2. ROS Wiki: https://wiki.ros.org/novatel_oem7_driver 
+3. ROS Index (**humble**): https://index.ros.org/r/novatel_oem7_driver/github-novatel-novatel_oem7_driver/#humble 
 
