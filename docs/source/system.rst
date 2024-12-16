@@ -27,7 +27,7 @@ Signal diagram
 CAN bus
 -------
 
-.. image:: images/Henry_CAN_bus_diagram.png
+.. image:: images/henry_gateway.png
    :width: 1000
    :alt: CAN bus diagram of Henry
 
