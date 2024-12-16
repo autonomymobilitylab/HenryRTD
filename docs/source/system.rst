@@ -26,6 +26,13 @@ Signal diagram
 
 CAN bus
 -------
+The platform has access to 3 different high speed CAN networks. All the networks are presented below.
+
+.. image:: images/henry_can_connections.png
+   :width: 1000
+   :alt: CAN bus networks
+
+CAN bus connection to the vehicle is done via the gateway unit (at the same time gateway is providing the OBD socket) which is located under the steering wheel, behind obd connector.
 
 .. image:: images/henry_gateway.png
    :width: 1000
