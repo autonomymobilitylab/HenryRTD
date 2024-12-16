@@ -45,18 +45,20 @@ List of available control units in each network.
    - X9.2 OBD Socket
  
 2. **HS 2 CAN (C-2) (W2.13-2)**
-   A2.1 ABS Control Unit
-   A2.42 Vehicle Dynamics Control Unit
-   A4.1 Airbag Control Unit
-   A6.269 Image Processing Unit (optional)
-   A8.612 Headlamp Control Unit (optional)
-   A18.3 Selector Lever Control Unit 
-   A41.10 Steering Booster Control Unit
-   A41.15 Steering Column Electronics Control Unit
-   X9.2 OBD Socket 
+   
+   - A2.1 ABS Control Unit
+   - A2.42 Vehicle Dynamics Control Unit
+   - A4.1 Airbag Control Unit
+   - A6.269 Image Processing Unit (optional)
+   - A8.612 Headlamp Control Unit (optional)
+   - A18.3 Selector Lever Control Unit 
+   - A41.10 Steering Booster Control Unit
+   - A41.15 Steering Column Electronics Control Unit
+   - X9.2 OBD Socket
+ 
 3. **HS 3 CAN (C-3) (W2.13-3)**
-   A3.7 Cruise Control Unit (optional)
-   A6.269 Image Processing Unit (optional)
+   - A3.7 Cruise Control Unit (optional)
+   - A6.269 Image Processing Unit (optional)
 
 CAN bus connection to the vehicle is done via the gateway unit (at the same time gateway is providing the OBD socket) which is located under the steering wheel, behind OBD connector.
 
