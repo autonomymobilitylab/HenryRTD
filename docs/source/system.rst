@@ -33,14 +33,17 @@ The platform has access to 3 different high speed CAN networks. All the networks
    :alt: CAN bus networks
 
 List of available control units in each network. 
+
 1. **HS 1 CAN (C-1) (W2.13-1)**
-   A1.1 Engine Control Unit
-   A3.440 Differential Control Unit (optional)
-   A3.8 Automatic Transmission Control Unit (optional)
-   A6.30 Central Electronics Control Unit
-   A7.14 Parking Aid Control Unit (optional)
-   A7.45 Media Interface Control Unit
-   X9.2 OBD Socket 
+   
+   *A1.1 Engine Control Unit
+   *A3.440 Differential Control Unit (optional)
+   *A3.8 Automatic Transmission Control Unit (optional)
+   *A6.30 Central Electronics Control Unit
+   *A7.14 Parking Aid Control Unit (optional)
+   *A7.45 Media Interface Control Unit
+   *X9.2 OBD Socket
+ 
 2. **HS 2 CAN (C-2) (W2.13-2)**
    A2.1 ABS Control Unit
    A2.42 Vehicle Dynamics Control Unit
