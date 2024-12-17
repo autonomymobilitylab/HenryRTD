@@ -1,4 +1,4 @@
-GPS
+GNSS
 =======
 
 A **Novatel PwrPak7D** GPS unit (with **Tallysman VSP6337L** dual antennas)  is installed. While the GPS unit is in the trunk of the vehicle, the two antennas are located on the two rear corners of the vehicle roof.
@@ -186,7 +186,7 @@ Resources
 ---------
 Note that the **gps_msgs** package, which includes the **GPSFix** and **GPSStatus** message types, is yet to have a complete ROS 2 documentation page for the topic information. The most detailed available documentation is mainly from ROS 1 (from which the package was ported), which is partially applicable (albeit some differences to the message structure). 
 
-For detailed information on the web for the GNSS package, you can refer to the following resources:
+For detailed information on the web for the GNSS package and topic information, you can refer to the following resources:
 
 1. Github repository (**humble** branch): https://github.com/novatel/novatel_oem7_driver/tree/humble
 
