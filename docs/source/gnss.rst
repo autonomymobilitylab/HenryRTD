@@ -83,7 +83,7 @@ The following table presents a description of the GNSS data attributes included 
    | r                          | better signal strength, which usually results in better accuracy.        |
    +----------------------------+--------------------------------------------------------------------------+
    | status.status              | A numerical code indicating the GNSS fix status. Refer to the            |
-   |                            | `NovAtel BESTPOS Status Codes`_ for a description of each code.                                  |
+   |                            | `NovAtel BESTPOS Status Codes`_ for a description of each code.          |
    +----------------------------+--------------------------------------------------------------------------+
    | status.motion_source*      | Specifies the source of motion data (e.g., speed). It is represented by  |
    |                            | a numerical code that identifies the sensor or method used.              |
