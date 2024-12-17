@@ -1,16 +1,18 @@
+#######
 Cameras
-=======
+#######
 
 A **Blackfly S** camera is installed inside behind the dashboard.
 
-* Resolution: 2048 x 1536 (3.2 MP)
-* Max frame rate: 55 fps
+* Resolution: 2448 x 2048 (5 MP)
+* Max frame rate: 35 fps
+* Color
 * USB3
 
 .. _usage:
 
 Usage
------
+=====
 
 The camera publishes to the topics ``/flir_camera_driver/image_raw`` and ``/flir_camera_driver/image_raw/compressed``.
 From the image_transport package, a debayer node is used to get a compressed color image from the camera.
@@ -20,12 +22,22 @@ To view the camera feed, run ``rqt_image_view`` and select the topic ``/flir_cam
 .. code-block:: bash
   ros2 run rqt_image_view rqt_image_view
 
-Launch the camera driver with ``camera.launch.py`` in the common launch repository (see :doc:`platform_usage` for more details).
+Launch the camera driver with ``camera.launch.py`` in the platform workspace repository (see :doc:`platform_usage` for more details).
+
+Configuring camera settings
+---------------------------
+
+The camera driver uses two different config files: one for each camera type, and one for the camera settings of each camera.
+The camera type configuration (for example `this one <https://github.com/ros-drivers/flir_camera_driver/blob/humble-devel/spinnaker_camera_driver/config/blackfly_s.yaml>_`) maps the Spinnaker nodes (the settings which you see in Spinview) to ROS parameters.
+Then, they can be set in the launch file (like in `this example <https://github.com/ros-drivers/flir_camera_driver/blob/4d72f5972a48fdadc9916acdb82a8d0c51a87282/spinnaker_camera_driver/launch/driver_node.launch.py#L26>_`) or a separate config file.
+
+* If a setting is available in the camera type config file, it can be set in the launch file or camera settings config.
+* If a setting is not available in the camera type config file (but is shown in Spinview), it can be added to the camera type config file. See the `instructions in the flir_camera_driver repository <https://github.com/ros-drivers/flir_camera_driver/tree/humble-devel/spinnaker_camera_driver#how-to-develop-your-own-camera-configuration-file>_` for how to do this, but in a nutshell: check what the name of the parameter is in Spinview, and add it to the in the same format as the others. Then, set the parameter in the launch file or camera settings config.
 
 .. _installation:
 
 Installation
-------------
+============
 
 To install the needed drivers for ROS2, follow the instructions at
 https://github.com/ros-drivers/flir_camera_driver/ in the folder *spinnaker_camera_driver*

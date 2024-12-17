@@ -8,7 +8,9 @@ Contributing
 
 Add any new documentation pages to ``docs/sources/`` in `ReST format (.rst) <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_,
 and add the name of page to the table of contents at ``docs/sources/index.rst``.
-Add new images to docs/source/images and if you have for example drawio version add to docs/source/images_source
+
+Add new images to ``docs/source/images`` and if you have for example drawio versions add them to ``docs/source/images_source``.
+
 Readthedocs handles the rest, rebuilding the page when changes are pushed here.
 
 Note that the documentation is public! Do not store sensitive information here.
@@ -29,6 +31,7 @@ ReadTheDocs ReST syntax tips
 
 * The title for a page is underlined with ``=`` and sections with ``-``.
 * Tags for sections can be added with ``.. _section-name:`` above the title of a section, and then linked to with ``:ref:`section-name```. For linking to another page, use ``:doc:`page name```.
+* To separate paragraphs, add a blank line between them.
 
 Setup
 -----

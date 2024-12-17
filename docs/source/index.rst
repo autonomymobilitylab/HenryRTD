@@ -7,10 +7,6 @@ Welcome to Henry's documentation!
   :width: 796
   :alt: The Henry vehicle at the lab.
 
-.. note::
-
-   This doc is under active development.
-
 Contents
 --------
 
@@ -33,7 +29,7 @@ Vehicle
 --------
 
 - Ford Focus (IV) 2019
-  - 1.5L Diesel, 88kw
+  - 1.5L Diesel, 88 kW
 
 Sensor setup
 ------------
@@ -42,8 +38,8 @@ For a detailed diagram of the setup with connections, see :doc:`system diagram <
 
 * :doc:`Camera <cameras>`
 
-  * Blackfly S BFS-U3-31S4C-C
-  * Resolution: 2048 x 1536
+  * Blackfly S BFS-U3-50S5C
+  * Resolution: 2448 x 2048
 
 * Can-bus connections to 4 different can networks 
 
