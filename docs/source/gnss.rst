@@ -46,8 +46,6 @@ Topic information
 
 The following table presents a description of the GNSS data attributes included in the topic information (values of which could be obtained by the terminal command ``ros2 topic echo /novatel/oem7/gps``):
 
-.. table:: GNSS Topic Attributes
-
    +----------------------------+--------------------------------------------------------------------------+
    | Attribute                  | Description                                                              |
    +============================+==========================================================================+
