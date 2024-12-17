@@ -28,11 +28,11 @@ Configuring camera settings
 ---------------------------
 
 The camera driver uses two different config files: one for each camera type, and one for the camera settings of each camera.
-The camera type configuration (for example `this one <https://github.com/ros-drivers/flir_camera_driver/blob/humble-devel/spinnaker_camera_driver/config/blackfly_s.yaml>_`) maps the Spinnaker nodes (the settings which you see in Spinview) to ROS parameters.
-Then, they can be set in the launch file (like in `this example <https://github.com/ros-drivers/flir_camera_driver/blob/4d72f5972a48fdadc9916acdb82a8d0c51a87282/spinnaker_camera_driver/launch/driver_node.launch.py#L26>_`) or a separate config file.
+The camera type configuration (for example `this one <https://github.com/ros-drivers/flir_camera_driver/blob/humble-devel/spinnaker_camera_driver/config/blackfly_s.yaml>`_) maps the Spinnaker nodes (the settings which you see in Spinview) to ROS parameters.
+Then, they can be set in the launch file (like in `this example <https://github.com/ros-drivers/flir_camera_driver/blob/4d72f5972a48fdadc9916acdb82a8d0c51a87282/spinnaker_camera_driver/launch/driver_node.launch.py#L26>`_) or a separate config file.
 
 * If a setting is available in the camera type config file, it can be set in the launch file or camera settings config.
-* If a setting is not available in the camera type config file (but is shown in Spinview), it can be added to the camera type config file. See the `instructions in the flir_camera_driver repository <https://github.com/ros-drivers/flir_camera_driver/tree/humble-devel/spinnaker_camera_driver#how-to-develop-your-own-camera-configuration-file>_` for how to do this, but in a nutshell: check what the name of the parameter is in Spinview, and add it to the in the same format as the others. Then, set the parameter in the launch file or camera settings config.
+* If a setting is not available in the camera type config file (but is shown in Spinview), it can be added to the camera type config file. See the `instructions in the flir_camera_driver repository <https://github.com/ros-drivers/flir_camera_driver/tree/humble-devel/spinnaker_camera_driver#how-to-develop-your-own-camera-configuration-file>`_ for how to do this, but in a nutshell: check what the name of the parameter is in Spinview, and add it to the in the same format as the others. Then, set the parameter in the launch file or camera settings config.
 
 .. _installation:
 

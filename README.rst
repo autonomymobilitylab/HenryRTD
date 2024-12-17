@@ -1,10 +1,11 @@
+#####################################
 Read The Docs documentation for Henry
-======================================
+#####################################
 
 This repository is generated into Read The Docs documentation at https://henrydocs.readthedocs.io.
 
 Contributing
-------------
+============
 
 Add any new documentation pages to ``docs/sources/`` in `ReST format (.rst) <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_,
 and add the name of page to the table of contents at ``docs/sources/index.rst``.
@@ -16,7 +17,7 @@ Readthedocs handles the rest, rebuilding the page when changes are pushed here.
 Note that the documentation is public! Do not store sensitive information here.
 
 ReadTheDocs ReST syntax tips
-----------------------------
+============================
 
 * Use \``double backticks\`` for ``inline code snippets`` or ``file names``.
 
@@ -32,9 +33,14 @@ ReadTheDocs ReST syntax tips
 * The title for a page is underlined with ``=`` and sections with ``-``.
 * Tags for sections can be added with ``.. _section-name:`` above the title of a section, and then linked to with ``:ref:`section-name```. For linking to another page, use ``:doc:`page name```.
 * To separate paragraphs, add a blank line between them.
+* Images are added with ``.. image:: images/image.png``. You can also add a width, alt text, and other options. See the `Sphinx documentation <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-image>`_ for more options.
+  
+  * To link to an image, use ``:ref:`image name <image-name>` ``.
+
+* Overline *and* underline with ``######`` to make titles, underline with ``=====`` for sections, and underline with ``-----`` for subsections."
 
 Setup
------
+=====
 
 A webhook for notifying Readthedocs of any pushed changes has been configured for this repo in Github with the URL and secret from the Integrations page in Readthedocs (instructions `here <https://docs.readthedocs.io/en/stable/guides/setup/git-repo-manual.html#manual-integration-setup>`_).
 

@@ -1,5 +1,6 @@
+#################################
 Welcome to Henry's documentation!
-===================================
+#################################
 
 **Henry** is a research platform vehicle at the Autonomy and Mobility laboratory at Aalto University.
 
@@ -8,7 +9,7 @@ Welcome to Henry's documentation!
   :alt: The Henry vehicle at the lab.
 
 Contents
---------
+========
 
 .. toctree::
 
@@ -26,13 +27,13 @@ The system page has diagrams of the connections and power setup.
 
 
 Vehicle
---------
+=======
 
 - Ford Focus (IV) 2019
   - 1.5L Diesel, 88 kW
 
 Sensor setup
-------------
+============
 
 For a detailed diagram of the setup with connections, see :doc:`system diagram <system>`.
 
@@ -67,12 +68,12 @@ For a detailed diagram of the setup with connections, see :doc:`system diagram <
   * Integrated inertial measure unit
 
 Software
---------
+========
 
 * Ubuntu 22.04
 * ROS2 Humble
 
 Coordinate frames
------------------
+=================
 
 TODO: Coordinate frames (TF)
