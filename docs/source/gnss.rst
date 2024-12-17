@@ -127,7 +127,7 @@ The following table presents a description of the GNSS data attributes included 
 |                                 | satellite geometry (`DOP Guide`_). Lower values mean better accuracy.    |
 +---------------------------------+--------------------------------------------------------------------------+
 | pdop                            | Position Dilution of Precision: Measures accuracy of 3D position.        |
-|                                 | (`DOP Guide`_). Lower values indicate better position accuracy.          |
+|                                 | (`DOP Guide`_). Lower values mean better position accuracy.              |
 +---------------------------------+--------------------------------------------------------------------------+
 | hdop                            | Horizontal Dilution of Precision: Reflects accuracy of the horizontal    |
 |                                 | position. (`DOP Guide`_). Lower values mean better horizontal accuracy.  |
@@ -172,7 +172,7 @@ The following table presents a description of the GNSS data attributes included 
 |                                 | to a diagonal position covariance matrix.                                |
 +---------------------------------+--------------------------------------------------------------------------+
 
-**NOTE**: Float values of **0.0** for corresponding attributes above may typically mean that no measurement was made. 
+**NOTE**: Float values of **0.0** for corresponding attributes above may typically mean that no measurement was obtained. 
 
 .. _NovAtel BESTPOS Status Codes: https://docs.novatel.com/OEM7/Content/Logs/BESTPOS.htm?Highlight=bestpos#SolutionStatus
 
