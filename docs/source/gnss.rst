@@ -178,7 +178,7 @@ The following table presents a description of the GNSS data attributes included 
 
 .. _DOP Guide: https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation) 
 
-'*': numerical code guide not located
+            '*': numerical code guide not located
 
 In addition, note that the **gps_msgs** package, which includes the **GPSFix** and **GPSStatus** message types, is yet to have a complete ROS 2 documentation page for the topic information. The most detailed available documentation is mainly from ROS 1 (from which the package was ported), which is partially applicable (albeit some differences to the message structure). For detailed information on the web for this topic, you can refer to the following resources:
 
