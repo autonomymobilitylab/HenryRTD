@@ -57,6 +57,7 @@ List of available control units in each network.
    - X9.2 OBD Socket
  
 3. **HS 3 CAN (C-3) (W2.13-3)**
+   
    - A3.7 Cruise Control Unit (optional)
    - A6.269 Image Processing Unit (optional)
 
@@ -66,3 +67,6 @@ CAN bus connection to the vehicle is done via the gateway unit (at the same time
    :width: 1000
    :alt: CAN bus diagram of Henry
 
+.. image:: images/can_topic.png
+   :width: 1000
+   :alt: CAN bus topic diagram of Henry
