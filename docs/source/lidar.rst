@@ -54,12 +54,12 @@ Resources
 
 For the detailed official information about the ROS-2 drivers for velodyne, refer the following web pages. The ROS wiki pages have detailed description for the configuration parameters.
 
-1. Github repository (**ros2** branch): `Link <https://github.com/ros-drivers/velodyne>`
+1. Github repository (**ros2** branch): `Link <https://github.com/ros-drivers/velodyne>`_
 
-2. ROS wiki for velodyne_driver: `Link <https://index.ros.org/p/velodyne_driver/>`
+2. ROS wiki for velodyne_driver: `Link <https://index.ros.org/p/velodyne_driver/>`_
 
-3. ROS wiki for velodyne_pointcloud: `Link <https://index.ros.org/p/velodyne_pointcloud/github-ros-drivers-velodyne/#humble>`
+3. ROS wiki for velodyne_pointcloud: `Link <https://index.ros.org/p/velodyne_pointcloud/github-ros-drivers-velodyne/#humble>`_
 
-4. Sensor datasheet: `Internal link <https://aaltofi.sharepoint.com/:b:/r/sites/AMLab2/Shared%20Documents/02-Henry/Technical%20documentation/Datasheets/63-9378_Rev%20D_ULTRA%20Puck_VLP-32C_Datasheet_Web.pdf?csf=1&web=1&e=qq59Sq>`
+4. Sensor datasheet: `Internal link <https://aaltofi.sharepoint.com/:b:/r/sites/AMLab2/Shared%20Documents/02-Henry/Technical%20documentation/Datasheets/63-9378_Rev%20D_ULTRA%20Puck_VLP-32C_Datasheet_Web.pdf?csf=1&web=1&e=qq59Sq>`_
 
 
