@@ -12,7 +12,7 @@ Getting started
 2. Run the following command inside the folder to clone the henry_ros2 repository: 
     ``git clone https://github.com/autonomymobilitylab/henry_ros2.git``
 3. Build the ROS2 package using the following command:
-    ``colcon build``
+    ``colcon build --symlink-install``
 4. Source the bash file. To do this, add the following line to the `~/.bashrc` file:
     ``source ~/henry_platform_ws/install/setup.bash``
 5. The Henry platform is ready! To launch the **master** launch file, execute the following command in a new terminal:
