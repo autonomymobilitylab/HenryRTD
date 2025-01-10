@@ -37,6 +37,11 @@ To launch the master launch file, run:
 
 ``ros2 launch henry_launch henry_bringup_launch.py``
 
+Configuration files
+===================
+
+The sensors use separate configuration files for their parameters. These files are located in the ``config`` folder of the ``henry_launch`` package, and the launch files use these configuration files to set the parameters for the sensors at start-up.
+
 .. _rviz
 
 Rviz
