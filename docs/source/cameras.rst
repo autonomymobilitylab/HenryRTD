@@ -44,10 +44,13 @@ Published topics
      - Description
      - Source node
    * - ``/<camera_name>/camera_info``
-     - Camera info message from the camera
+     - Camera info message
+     - Camera driver
+   * - ``/<camera_name>/meta``
+     - Camera exposure etc.
      - Camera driver
    * - ``/<camera_name>/image_raw``
-     - Raw, bayer-format image from the camera
+     - Raw, bayer-format image
      - Camera driver
    * - ``/<camera_name>/image_color``
      - Debayered image, based on ``image_raw``
@@ -67,7 +70,7 @@ Published topics
 
    * ``/<camera_name>/image_color`` (or ``image_mono`` if you don't need color)
    * ``/<camera_name>/image_color/compressed``
-   * ``/<camera_name>/camera_info``
+   * ``/<camera_name>/camera_info`` (this might be empty though, check if needed)
 
 When recording, the **compressed** image is often the best choice.
 
@@ -97,6 +100,9 @@ The camera driver uses three different config files:
    * If you need to change camera settings for your own project, copy the configuration file, name it with your own name/project's name, and modify it as needed.
 
 In short, if you need to change camera settings, make a new camera Spinnaker SDK settings configuration file, change whatever you need to, and make a new parameter file (which is given as an argument to the camera launch file) which points to the new camera settings configuration file.
+
+The camera driver has example values for the Spinnaker driver parameters and ready-made parameter mapping files for some cameras, and will try to use them if you don't provide ``config_file`` or ``parameter_mapping_file`` in the main parameter file. This is convenient for testing new cameras, but any long-term setups should get their own parameter mapping file and driver config file.
+
 
 Troubleshooting
 ---------------
