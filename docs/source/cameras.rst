@@ -36,23 +36,14 @@ Published topics
 ``<camera_name>`` is the name of the camera, which is set in the parameter file. The name for the Blackfly S camera is ``front_camera``.
 
 * ``/<camera_name>/camera_info``
-
    * The camera info message from the camera.
-
 * ``/<camera_name>/image_raw``
-
    * The raw, bayer-format image from the camera.
-
 * ``/<camera_name>/image_color``
-
    * The debayered image, based on ``image_raw``.
-
 * ``/<camera_name>/image_color/compressed``
-
    * A compressed version of ``image_color``
-
 * ``/<camera_name>/image_mono`` and ``/<camera_name>/image_mono/compressed``
-
    * Monochrome versions of the ``image_color`` topics, from the debayering node.
 
 When using the camera, most probably the only topics you want to use are:

@@ -2,10 +2,22 @@
 Platform usage
 ##############
 
+.. _overview:
+
+Overview
+========
+
+The ROS 2 code for Henry is stored in the private `henry_ros2 repository <https://github.com/autonomymobilitylab/henry_ros2>`_.` The repository is cloned on the Henry PC, which has its own Github access. Ask for access from AMLab if you need it.
+
+A separate repository is set up for this online documentation at https://github.com/autonomymobilitylab/HenryRTD. It is also cloned at the Henry PC. Please update it (there or with your own credentials at your laptop) any time changes are made or something seems to be missing!
+
 .. _getting started:
 
 Getting started
 ===============
+
+Instructions for setting up the Henry platform. If first-time setup has already been completed, skip to step 5.
+
 1. Create a folder named ``henry_platform_ws`` in home repository.
 
 2. Run the following command inside the folder to clone the henry_ros2 repository: 
