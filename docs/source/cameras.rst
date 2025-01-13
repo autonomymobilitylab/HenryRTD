@@ -21,7 +21,8 @@ The camera publishes bayer-format images. A debayer node from image_transport_pl
 Launch the camera driver with ``camera.launch.py`` in the platform workspace repository (see :doc:`platform_usage` for more details on the workspace). The launch file takes a single parameter file as its argument:
 
 .. code-block:: bash
-  ros2 launch henry_launch camera.launch.py parameter_file:=camera/front_camera_params.yaml
+
+   ros2 launch henry_launch camera.launch.py parameter_file:=camera/front_camera_params.yaml
 
 Replace ``front_camera_params.yaml`` with the parameter file for the setup that you want to launch. If you want to modify any parameters, make a separate parameter file. See :ref:`configuring_camera_settings` for more information on how to configure the camera settings.
 
@@ -36,40 +37,41 @@ Published topics
 ``<camera_name>`` is the name of the camera, which is set in the parameter file. The name for the Blackfly S camera is ``front_camera``.
 
 .. list-table:: Camera Topics
-   :widths: 20 50 30
+   :widths: 50 50 25
    :header-rows: 1
 
    * - Topic
      - Description
-     - Source
+     - Source node
    * - ``/<camera_name>/camera_info``
-     - Camera info message from the camera.
-     - Camera driver node
+     - Camera info message from the camera
+     - Camera driver
    * - ``/<camera_name>/image_raw``
-     - Raw, bayer-format image from the camera.
-     - Camera driver node
+     - Raw, bayer-format image from the camera
+     - Camera driver
    * - ``/<camera_name>/image_color``
-     - Debayered image, based on ``image_raw``.
-     - Debayering node
+     - Debayered image, based on ``image_raw``
+     - Debayering
    * - ``/<camera_name>/image_color/compressed``
-     - Compressed version of ``image_color``.
-     - Debayering node (image_transport)
+     - Compressed version of ``image_color``
+     - Debayering
    * - ``/<camera_name>/image_mono``
      - Monochrome version of ``image_color``
-     - Debayering node
+     - Debayering
    * - ``/<camera_name>/image_mono/compressed``
      - Monochrome of ``image_color/compressed``
-     - Debayering node
+     - Debayering
 
-When using the camera, most probably the only topics you want to use are:
+.. note::
+   When using the camera, most probably the only topics you want to use are:
 
-* ``/<camera_name>/image_color`` (or ``image_mono`` if you don't need color)
-* ``/<camera_name>/image_color/compressed``
-* ``/<camera_name>/camera_info``
+   * ``/<camera_name>/image_color`` (or ``image_mono`` if you don't need color)
+   * ``/<camera_name>/image_color/compressed``
+   * ``/<camera_name>/camera_info``
 
-When recording, the compressed image is often the best choice.
+When recording, the **compressed** image is often the best choice.
 
-The camera driver has been set to not publish ``image_raw/compressed`` and ``image_raw/theora``, but they can be easily included if needed.
+The image_transport_plugins package automatically compresses the images without any configuration needed. The camera driver has been set to not publish ``image_raw/compressed`` and ``image_raw/theora``, but they can be easily included if needed.
 
 .. _configuring_camera_settings:
 
@@ -106,13 +108,13 @@ Some pain points when working with the camera driver:
 
    * Documentation is still lacking, a good starting point is the `ROS 2 Rolling version of the image_proc package <https://docs.ros.org/en/rolling/p/image_proc/>`_ along with the old `ROS 1 documentation <http://wiki.ros.org/image_proc>`_ and the `source code for the ROS 2 Humble version <https://github.com/ros-perception/image_pipeline/tree/humble/image_proc>`_.
 
-   * The default debayering algorithm is best quality, but too slow to debayer a 5 MP image at 35 fps. The algorithm can be changed in the launch file.
+   * The default debayering algorithm (number 3) is best quality, but too slow to debayer a 5 MP image at 35 fps. The algorithm can be changed in the launch file. Number 0 is the fastest, and works with the Blackfly S camera.
 
    * Edge-aware algorithms (alg. numbers 1 and 2) can't be used with the Bayer pattern of the Blackfly S, at least on ROS 2 Humble. They only support Bayer GRBG8. The debayering will fall back to bilinear (the fastest algorithm).
 
    * The documentation for the debayering node seems to suggest that compressed images can be used, but setting the node's ``image_transport`` parameter to ``compressed`` does not do anything. Debayering will not work as well with compressed images, it assumes the image is in raw format.
 
-* The current implementation only allows for one camera. The flir_camera_driver repository as a `launch file for multiple cameras <https://github.com/ros-drivers/flir_camera_driver/blob/humble-devel/spinnaker_camera_driver/launch/multiple_cameras.launch.py>`_ whose approach looks like it would be easy to implement in our own launch file.
+* The current implementation only allows for one camera. The flir_camera_driver repository has a `launch file for multiple cameras <https://github.com/ros-drivers/flir_camera_driver/blob/humble-devel/spinnaker_camera_driver/launch/multiple_cameras.launch.py>`_ whose approach looks like it would be easy to implement in our own launch file.
 * The camera driver prints the incoming raw image's FPS to the console when starting the camera. To my understanding, this is the same FPS as Spinview sees, and is not affected by ROS. On one occasion, the FPS was only about 25 Hz. If this happens again, I would check with another USB cable. The current cable is (maybe) 5 m long, which might be too long for USB 3.1 with the full 5MP image resolution of the Blackfly S.
 
 .. _installation:
