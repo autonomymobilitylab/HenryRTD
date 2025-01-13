@@ -54,7 +54,7 @@ Configuration files
 
 The sensors use separate configuration files for their parameters. These files are located in the ``config`` folder of the ``henry_launch`` package, and the launch files use these configuration files to set the parameters for the sensors at start-up.
 
-.. _rviz
+.. _rviz:
 
 Rviz
 ====
@@ -73,3 +73,20 @@ The `rviz_2d_overlay_plugins <https://index.ros.org/p/rviz_2d_overlay_plugins/>`
 ``sudo apt install ros-${ROS_DISTRO}-rviz-2d-overlay-plugins``
 
 The package allows text to be displayed in the Rviz window. Any overlayed text must be published as a `TextOverlay` message in its own topic. The text overlay messages are constructed in `rviz_text_overlay_publishers.py` in the `henry_launch` package. See the already published overlays for examples to create your own. Note that the publishers have been written to publish the text immediately when a subscribed message comes in, which means that writing many different messages for frequently-updated topics will be heavy on the car's CPU - be mindful of what you display.
+
+
+.. _recording:
+
+Recording data
+==============
+
+When recording rosbags, place them in the folder ``~/rosbags/``. Having a subfolder under your own name (or a project's name) is a good idea, since it allows others to easily see whose data it is.
+
+There is a helper bash function in ``~/henry_platform_ws/utils/`` for recording all sensor data except raw images:
+
+.. code-block:: bash
+    
+    bash ~/henry_platform_ws/utils/record_sensors.sh
+
+.. warning::
+    Do not store data long-term on the Henry PC! The drive will quickly fill up, and there is no backup if anything happens to the PC.
